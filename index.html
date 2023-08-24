@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+<div class="profile-container">
+	<div class="cover-photo">
+		<input type="file" id="coverPhotoInput" accept="image/*">
+		<img id="coverPhoto" src="default.jpg" alt="portada">
+	</div>
+	<div class="profile-info">
+		<div class="profile-photo">
+			<input type="file" id="profilePhotoInput" accept="image/*">
+			<img src="usuario.png" id="profilePhoto" alt="Foto de perfil">
+		</div>
+
+		<h1>Mi nombre de usuario</h1>
+	</div>
+</div>
+
+<div class="comment-section">
+	<div class="comment-input">
+		<textarea id="commentInput" placeholder="Escribe un comentario..."></textarea>
+		<input type="file" id="commentPhotoInput" accept="image/*">
+	</div>
+	<button id="commentButton">Comentar</button>
+	<div id="comments"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
